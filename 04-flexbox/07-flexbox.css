@@ -3,21 +3,206 @@
 }
 
 /* Flex Container 1 */
+.flex-container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align the flex items */
+  width: 550px;
+  gap: 10px; /* Sets a gap between the items */
+}
+
+/* Base style for all items */
+.flex-container-1 .flex-item {
+  box-sizing: border-box;
+  width: 100px; /* Fixed width for all items */
+  height: 100px;
+  background-color: purple;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+}
 
 /* Flex Container 2 */
+.flex-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end; /* Aligns items to the end (right side) for each row */
+  width: 550px; /* Same as Flex Container 1 to keep consistency */
+  gap: 10px;
+}
 
+/* Base style for all items in Flex Container 2 */
+.flex-container-2 .flex-item {
+  box-sizing: border-box;
+  width: 100px; /* Fixed width for all items */
+  height: 100px;
+  background-color: purple;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+}
+
+/* Reverse the order of items manually */
+.flex-container-2 .item1 {
+  order: 2;
+}
+.flex-container-2 .item2 {
+  order: 1;
+}
+.flex-container-2 .item3 {
+  order: -2;
+}
+.flex-container-2 .item4 {
+  order: -3;
+}
+.flex-container-2 .item5 {
+  order: -4;
+}
+.flex-container-2 .item6 {
+  order: 5;
+}
+.flex-container-2 .item7 {
+  order: 4;
+}
+.flex-container-2 .item8 {
+  order: 3;
+}
 /* Flex Container 3 */
+.flex-container-3 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  width: 210px; /* Width to fit two 100px wide items with a 10px gap */
+}
 
+/* Base style for all items in Flex Container 3 */
+.flex-container-3 .flex-item {
+  box-sizing: border-box;
+  height: 75px; /* Fixed height for all items */
+  width: 75px; /* Fixed width for all items */
+  background-color: purple;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  margin: 5px; /* Adjusted for gap */
+}
+
+/* Reversing the order within columns */
+.flex-container-3 {
+  flex-direction: column-reverse;
+}
 /* use height: 400px; on the container */
 
 /* Flex Container 4 */
+.flex-container-4 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center; /* Aligns items to the end (right side) for each row */
+  width: 550px; /* Same as Flex Container 1 to keep consistency */
+  gap: 10px;
+}
+
+.flex-container-4 .flex-item {
+  box-sizing: border-box;
+  width: 100px; /* Fixed width for all items */
+  height: 100px;
+  background-color: purple;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+}
+
+.flex-container-4 .flex-item:nth-last-child(-n + 3) {
+  margin-right: 30px; /* Horizontal margin for spacing within the row */
+  margin-left: 30px;
+}
+.flex-container-4 .flex-item:nth-last-child(3) {
+  margin-left: auto; /* Forces item 6 to the start of the row */
+}
+.flex-container-4 .flex-item:last-child {
+  margin-right: auto; /* Forces item 8 to the end of the row */
+}
 
 /* Flex Container 5 */
+/* Flex Container 5 */
+.flex-container-5 {
+  display: flex;
+  align-items: center; /* Center aligns items vertically within the container */
+  height: 100px; /* Fixed height for the container */
+  width: 100%; /* Adjust as necessary to fit all items */
+}
+
+/* Base style for all items */
+.flex-container-5 .flex-item {
+  box-sizing: border-box;
+  width: 100px; /* Fixed width for all items - adjust if necessary */
+  background-color: purple;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center aligns text within the flex item */
+  border: 2px solid white;
+  margin-right: 10px; /* Spacing between items, adjust as necessary */
+}
+
+/* Removing right margin from the last item */
+.flex-container-5 .flex-item:last-child {
+  margin-right: 0;
+}
+
+/* Item heights relative to the container height */
+.flex-container-5 .item1,
+.flex-container-5 .item3,
+.flex-container-5 .item6 {
+  height: 75px; /* 75% of the container's height */
+}
+
+.flex-container-5 .item2,
+.flex-container-5 .item8 {
+  height: 100px; /* 100% of the container's height */
+}
+
+.flex-container-5 .item4,
+.flex-container-5 .item5,
+.flex-container-5 .item7 {
+  height: 50px; /* 50% of the container's height */
+}
 
 /* Flex Container 6 */
+.flex-container-6 {
+  display: flex;
+  flex-direction: column; /* Stacks the flex-items vertically */
+  flex-wrap: wrap; /* Allows the items to wrap into new columns */
+  height: 400px; /* Total height of the container */
+  align-content: flex-start; /* Aligns the content to the start of the cross-axis */
+}
 
+/* Style for the flex-items */
 .flex-container-6 .flex-item {
-  width: 400px;
+  box-sizing: border-box;
+  width: 400px; /* Width of each item */
+  height: calc(
+    400px / 3
+  ); /* Height of each item - divide the container's height by 3 */
+  background-color: purple;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+}
+
+/* Adjust the container's width to allow three 400px wide items plus any gap/margin */
+.flex-container-6 {
+  width: calc(3 * 400px); /* Update this calculation based on your gap/margin */
 }
 
 /* use height: 300px; on the container */
