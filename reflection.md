@@ -38,6 +38,20 @@ so not really.
 Were there other exercises that might have helped you learn this weeks topics better?
 No
 
-### Accessibility
+### CSS Grid Areas
 
 Enter your reflections on this section here.
+Were you able to complete the exercises on your own or did you use videos or the solutions for help?
+I was able to handle these exercises with the notes in lab and a little experience gained beforehand mostly
+from when I was learning Flexbook for the above exercises.
+
+How helpful did you find the exercises in this section? Was there one exercise that was particularly helpful?
+These were solid exercises, they felt easier to handle after the flexbook just due to how I was thinking about
+the exercises themselves and layout. I felt exercise 2 basically helped me really visualize and practice using
+the grid-area functionality.
+
+Was there something that you wish had been explained better?
+Not really, this lab went fairly smoothly.
+
+Were there other exercises that might have helped you learn this weeks topics better?
+No
