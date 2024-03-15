@@ -55,3 +55,21 @@ Not really, this lab went fairly smoothly.
 
 Were there other exercises that might have helped you learn this weeks topics better?
 No
+
+### Javascript
+
+Enter your reflections on this section here.
+Were you able to complete the exercises on your own or did you use videos or the solutions for help?
+I needed to use some outside references for some of the API questions, mostly just how I formatted my previous
+project for my cloud and webservices class. I also referenced the JS geeksforgeeks webpage just for general
+syntax.
+
+How helpful did you find the exercises in this section? Was there one exercise that was particularly helpful?
+I really enjoyed it, I have a little bit of experience with JS but in particular I was a big fan of exercise 3
+and 6, 6 for the use of API and 3 for just refreshing my on functionality with objects beforehand.
+
+Was there something that you wish had been explained better?
+No, I struggled a bit with handleing data once it was acquired but thats just syntax the idea makes sense.
+
+Were there other exercises that might have helped you learn this weeks topics better?
+No
