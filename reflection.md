@@ -73,3 +73,23 @@ No, I struggled a bit with handleing data once it was acquired but thats just sy
 
 Were there other exercises that might have helped you learn this weeks topics better?
 No
+
+### jQuery
+
+Enter your reflections on this section here.
+Were you able to complete the exercises on your own or did you use videos or the solutions for help?
+I needed to use alot of outside resources this resource 1: (https://www.w3schools.com/jquery/default.asp)
+resource 2: (https://dev.to/th3n00bc0d3r/vanilla-js-to-jquery-the-noobs-guide-2ghg) aswell as asking for assistance
+from a close friend. I tried to find a few videos but given just understanding the change from vanilla to jquery
+would be manipulating the logic/syntax videos werent super helpful.
+
+How helpful did you find the exercises in this section? Was there one exercise that was particularly helpful?
+The exercises were good I feel like it forced me to look into what makes jQuery better or moreuseful for certain
+assignments/programs. It didnt feel too difficult given we had the general idea of what was to be accomplished in
+vanilla js already.
+
+Was there something that you wish had been explained better?
+no
+
+Were there other exercises that might have helped you learn this weeks topics better?
+Maybe a 3rd exercise in which we didnt have source vanilla js code?
