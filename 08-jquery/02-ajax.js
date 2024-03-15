@@ -1,4 +1,4 @@
-const url = 'https://anapioficeandfire.com/api/books/';
+/*const url = 'https://anapioficeandfire.com/api/books/';
 
 const app = document.querySelector('#books');
 app.style.paddingLeft = 0;
@@ -49,4 +49,49 @@ const fetchData = (url) => {
     });
 };
 
-fetchData(url);
+fetchData(url);*/
+
+const url = "https://anapioficeandfire.com/api/books/";
+const $app = $("#books");
+$app.css("paddingLeft", "0");
+const $loading = $("#loading");
+
+const addBookToDOM = (item) => {
+  console.log(item);
+  let $element = $("<div></div>").css({
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    marginTop: "20px",
+  });
+  let $title = $("<h4></h4>").text(item.name);
+  let $author = $("<p></p>").text(`by ${item.authors[0]}`);
+  let $published = $("<p></p>").text(item.released.substr(0, 4));
+  let $pages = $("<p></p>").text(`${item.numberOfPages} pages`);
+
+  $element.append($title, $author, $published, $pages);
+  $app.append($element);
+};
+
+const fetchData = (url) => {
+  $.ajax({
+    url: url,
+    type: "GET",
+    success: (data) => {
+      $.each(data, (index, item) => {
+        addBookToDOM(item);
+      });
+    },
+    error: (request, status, error) => {
+      console.log(error);
+      $app.append($("<li></li>").text(`An error occurred. Please try again.`));
+    },
+    complete: () => {
+      $loading.remove();
+    },
+  });
+};
+
+$(document).ready(function () {
+  fetchData(url);
+});
